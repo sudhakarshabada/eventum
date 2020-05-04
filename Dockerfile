@@ -14,6 +14,9 @@ RUN \
   apt install php libapache2-mod-php php-mysql
   rm -rf /var/lib/apt/lists/*
 
+#Volume attachement
+VOLUME /data
+
 # Add files.
 ADD ./ /var/www/html/eventum
 
